@@ -1,0 +1,135 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-core:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-postoffice:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-jaxy-routes:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-websockets-jsr356:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-metrics:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-metrics-graphite:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-metrics-ganglia:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-metrics-librato:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-metrics-influxdb:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-servlet:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-db-classic:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-standalone:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-test-utilities:jar:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-servlet-integration-test:war:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-servlet-jpa-blog-integration-test:war:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-maven-plugin:maven-plugin:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-servlet-jpa-blog-archetype:maven-archetype:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja-servlet-archetype-simple:maven-archetype:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ninjaframework:ninja:pom:6.8.2-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 206, column 36
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] ninja                                                              [pom]
+[[1;34mINFO[m] ninja-core                                                         [jar]
+[[1;34mINFO[m] ninja-postoffice                                                   [jar]
+[[1;34mINFO[m] ninja-websockets-jsr356                                            [jar]
+[[1;34mINFO[m] ninja-servlet                                                      [jar]
+[[1;34mINFO[m] ninja-standalone                                                   [jar]
+[[1;34mINFO[m] ninja-db-classic                                                   [jar]
+[[1;34mINFO[m] ninja-test-utilities                                               [jar]
+[[1;34mINFO[m] ninja-jaxy-routes                                                  [jar]
+[[1;34mINFO[m] ninja-metrics                                                      [jar]
+[[1;34mINFO[m] ninja-metrics-graphite                                             [jar]
+[[1;34mINFO[m] ninja-metrics-ganglia                                              [jar]
+[[1;34mINFO[m] ninja-metrics-librato                                              [jar]
+[[1;34mINFO[m] ninja-metrics-influxdb                                             [jar]
+[[1;34mINFO[m] ninja-maven-plugin                                        [maven-plugin]
+[[1;34mINFO[m] ninja-servlet-integration-test                                     [war]
+[[1;34mINFO[m] ninja-servlet-jpa-blog-integration-test                            [war]
+[[1;34mINFO[m] ninja-servlet-jpa-blog-archetype                       [maven-archetype]
+[[1;34mINFO[m] ninja-servlet-archetype-simple                         [maven-archetype]
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/maven-metadata.xml
+Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/maven-metadata.xml (1.2 kB at 2.5 kB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36morg.ninjaframework:ninja[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding ninja 6.8.2-SNAPSHOT                                     [1/19][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mnondex-maven-plugin:1.1.2:nondex[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mninja[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mnondex-maven-plugin:1.1.2:nondex[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mninja[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mnondex-maven-plugin:1.1.2:nondex[m [1m(default-cli)[m @ [36mninja[0;1m ---[m
+SEVERE: Make sure surefire is in your pom.xml
+INFO: The original argline is: 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for ninja 6.8.2-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] ninja .............................................. [1;31mFAILURE[m [  0.526 s]
+[[1;34mINFO[m] ninja-core ......................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-postoffice ................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-websockets-jsr356 ............................ [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-servlet ...................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-standalone ................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-db-classic ................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-test-utilities ............................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-jaxy-routes .................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-metrics ...................................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-metrics-graphite ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-metrics-ganglia .............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-metrics-librato .............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-metrics-influxdb ............................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-maven-plugin ................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-servlet-integration-test ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-servlet-jpa-blog-integration-test ............ [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-servlet-jpa-blog-archetype ................... [1;33mSKIPPED[m
+[[1;34mINFO[m] ninja-servlet-archetype-simple ..................... [1;33mSKIPPED[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.105 s
+[[1;34mINFO[m] Finished at: 2021-10-17T16:45:19-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32medu.illinois:nondex-maven-plugin:1.1.2:nondex[m [1m(default-cli)[m on project [36mninja[m: [1;31mExecution default-cli of goal edu.illinois:nondex-maven-plugin:1.1.2:nondex failed.[m: NullPointerException -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

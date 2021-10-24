@@ -1,0 +1,6 @@
+16:52:24.721 [main] INFO ninja.metrics.graphite.NinjaGraphite - Started Graphite Metrics reporter for 'my.prefix', updating every 60s
+16:52:24.739 [main] DEBUG ninja.metrics.graphite.NinjaGraphite - Stopped Graphite Metrics reporter
+16:52:24.746 [main] INFO ninja.metrics.graphite.NinjaGraphite - Started Graphite Metrics reporter for 'test.hostname', updating every 60s
+16:52:24.746 [main] DEBUG ninja.metrics.graphite.NinjaGraphite - Stopped Graphite Metrics reporter
+16:52:24.753 [main] INFO ninja.metrics.graphite.NinjaGraphite - Started Graphite Metrics reporter for 'test.hostname', updating every 60s
+16:52:24.753 [main] DEBUG ninja.metrics.graphite.NinjaGraphite - Stopped Graphite Metrics reporter

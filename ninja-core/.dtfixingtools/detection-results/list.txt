@@ -1,0 +1,2 @@
+ninja.utils.NinjaModeHelperTest.testNinjaModeHelperWorksWithNoModeSet
+ninja.standalone.AbstractStandaloneTest.configurationPropertyPriority

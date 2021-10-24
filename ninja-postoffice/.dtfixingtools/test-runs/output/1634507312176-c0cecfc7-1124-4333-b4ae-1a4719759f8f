@@ -1,0 +1,58 @@
+16:48:32.827 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - Mock mailer received send email request
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - Subject : first mail
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - From    : from@localhost
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - To      : to@localhost
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - ----- Html content -------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - null
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - ----- Text content -------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - simple body text
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - Mock mailer received send email request
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - Subject : second mail
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - From    : from@localhost
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - To      : to@localhost
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - ----- Html content -------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - null
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - ----- Text content -------------------------------------
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - simple body text
+16:48:32.829 [main] INFO ninja.postoffice.mock.PostofficeMockImpl - --------------------------------------------------------
+DEBUG: JavaMail version 1.5.6
+DEBUG: successfully loaded resource: /META-INF/javamail.default.providers
+DEBUG: Tables of loaded providers
+DEBUG: Providers Listed By Class Name: {com.sun.mail.smtp.SMTPSSLTransport=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], com.sun.mail.smtp.SMTPTransport=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle], com.sun.mail.imap.IMAPSSLStore=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], com.sun.mail.pop3.POP3SSLStore=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], com.sun.mail.imap.IMAPStore=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], com.sun.mail.pop3.POP3Store=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle]}
+DEBUG: Providers Listed By Protocol: {imaps=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], imap=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], smtps=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], pop3=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle], pop3s=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], smtp=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]}
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+16:48:32.892 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:48:32.894 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:48:32.894 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:48:32.897 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:48:32.897 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-postoffice/target/test-classes/conf/application.conf
+16:48:33.247 [main] INFO ninja.postoffice.PostofficeProvider - Using ninja.postoffice.mock.PostofficeMockImpl as default implementation for ninja.postoffice.Postoffice
+16:48:33.251 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:48:33.251 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:48:33.251 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:48:33.251 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:48:33.251 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-postoffice/target/test-classes/conf/application.conf
+16:48:33.297 [main] INFO ninja.postoffice.PostofficeProvider - Using ninja.postoffice.mock.PostofficeMockImpl as default implementation for ninja.postoffice.Postoffice
+16:48:33.299 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:48:33.299 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:48:33.299 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:48:33.300 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:48:33.300 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-postoffice/target/test-classes/conf/application.conf
+16:48:33.396 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Started services, performing check if all up
+16:48:33.396 [smtp:127.0.0.1:2000] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Started smtp:127.0.0.1:2000
+16:48:33.437 [smtp:127.0.0.1:2000] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Handling new client connection smtp:127.0.0.1:2000<-/127.0.0.1:47482
+16:48:33.493 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login to1@domain for address to1@domain with password to1@domain because it didn't exist before.
+16:48:33.500 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login to2@domain for address to2@domain with password to2@domain because it didn't exist before.
+16:48:33.501 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login cc1@domain for address cc1@domain with password cc1@domain because it didn't exist before.
+16:48:33.502 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login cc2@domain for address cc2@domain with password cc2@domain because it didn't exist before.
+16:48:33.504 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login bcc1@domain for address bcc1@domain with password bcc1@domain because it didn't exist before.
+16:48:33.504 [smtp:127.0.0.1:2000<-/127.0.0.1:47482] INFO com.icegreen.greenmail.smtp.SmtpManager - Created user login bcc2@domain for address bcc2@domain with password bcc2@domain because it didn't exist before.
+16:48:33.506 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Stopping GreenMail ...
+16:48:33.506 [main] DEBUG com.icegreen.greenmail.util.GreenMail - Stopping service smtp:127.0.0.1:2000
+16:48:33.506 [main] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Stopping smtp:127.0.0.1:2000
+16:48:33.506 [main] DEBUG com.icegreen.greenmail.smtp.SmtpServer - Stopped smtp:127.0.0.1:2000

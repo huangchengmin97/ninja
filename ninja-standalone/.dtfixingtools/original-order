@@ -1,0 +1,11 @@
+ninja.standalone.WebSocketTest.websocketsEnabled
+ninja.standalone.NinjaJettyTest.sessionsAreNotSharedOnSingleResultInstances
+ninja.standalone.NinjaJettyTest.missingLanguageThrowsInjectorException
+ninja.standalone.NinjaJettyTest.jettyConfiguration
+ninja.standalone.NinjaJettyTest.directoryListingIsForbidden
+ninja.standalone.NinjaJettyTest.missingConfigurationThrowsException
+ninja.standalone.NinjaJettyTest.ssl
+ninja.standalone.NinjaJettyTest.minimalWithContext
+ninja.standalone.NinjaJettyTest.checkThatSilentErrorHandlerIsRegistered
+ninja.standalone.NinjaJettyTest.jettyConfigurationWithContext
+ninja.standalone.NinjaJettyTest.minimal

@@ -1,0 +1,36 @@
+16:50:40.985 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:40.988 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:40.989 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:40.992 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:40.992 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.206 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.206 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.206 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.206 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.206 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.215 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.216 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.216 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.216 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.216 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.223 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.223 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.223 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.223 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.223 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.229 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.229 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.229 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.229 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.229 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.236 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.236 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.236 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.237 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.237 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.248 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:50:41.248 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:50:41.248 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:50:41.249 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:50:41.249 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-db-classic/target/test-classes/conf/application.conf
+16:50:41.252 [main] INFO ninja.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine

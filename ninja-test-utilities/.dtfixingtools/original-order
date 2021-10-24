@@ -1,0 +1,4 @@
+ninja.utils.NinjaTestServerTest.overrideModule_works
+ninja.utils.NinjaTestServerTest.port_works
+ninja.utils.NinjaTestServerTest.ninjaMode_works
+ninja.utils.NinjaTestServerTest.overrideProperties_works

@@ -1,0 +1,3 @@
+ninja.metrics.graphite.NinjaGraphiteTest.testWithCustomPrefix
+ninja.metrics.graphite.NinjaGraphiteTest.testWithEmptyCustomPrefix
+ninja.metrics.graphite.NinjaGraphiteTest.testWithoutCustomPrefix

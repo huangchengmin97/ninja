@@ -1,0 +1,611 @@
+16:49:39.018 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:39.021 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:39.021 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:39.024 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:39.025 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:39.321 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:39.322 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+16:49:39.901 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:39.901 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:39.901 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:39.902 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:39.902 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:39.905 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:39.906 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:39.907 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:39.907 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:39.907 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:39.907 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:39.907 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:39.908 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:39.908 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:39.908 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:39.909 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:39.951 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:39.951 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:39.951 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:39.951 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:39.952 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:39.952 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:39.952 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:39.952 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:39.956 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:39.956 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:39.956 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:39.957 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:39.957 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:39.957 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:39.957 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:39.958 [main] INFO ninja.Bootstrap - Ninja injector started in 633 ms.
+16:49:39.967 [main] WARN ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+16:49:39.969 [main] INFO ninja.RouterImpl - ----------------------------------------------------------
+16:49:39.969 [main] INFO ninja.RouterImpl - Registered routes
+16:49:39.969 [main] INFO ninja.RouterImpl - ----------------------------------------------------------
+16:49:39.969 [main] INFO ninja.RouterImpl - GET /custom_base_package  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:39.970 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:39.970 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:39.976 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 6ms
+16:49:39.980 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:39.980 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:39.980 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:39.980 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:39.980 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:39.982 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:39.982 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.067 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.067 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.067 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.067 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.067 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.068 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.069 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.069 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.070 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.070 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.070 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.070 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.070 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.071 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.071 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.071 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.071 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.072 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.074 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.075 [main] INFO ninja.Bootstrap - Ninja injector started in 93 ms.
+16:49:40.078 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.078 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.078 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.078 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:40.078 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.078 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.080 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 2ms
+16:49:40.277 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.277 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.277 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.277 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.277 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.310 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.311 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.311 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.311 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.311 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.320 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.320 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.320 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.320 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.320 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.327 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.327 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.327 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.328 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.330 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.338 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.338 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.338 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.338 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.338 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.346 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.346 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.346 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.346 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.346 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.368 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.368 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.368 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.368 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.368 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.377 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.377 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.377 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.378 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.378 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.390 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.391 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.391 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.391 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.391 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.407 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.407 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.407 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.407 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.407 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.414 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:40.415 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:40.416 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.448 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.448 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.449 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.450 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.451 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.451 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.451 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.451 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.452 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.452 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.452 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.452 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.452 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.453 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.453 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.453 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.453 [main] INFO ninja.Bootstrap - Ninja injector started in 37 ms.
+16:49:40.454 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.454 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.454 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.454 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:40.454 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.454 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.454 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+16:49:40.456 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:40.456 [main] INFO ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+16:49:40.456 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.456 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.456 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.456 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.456 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.457 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:40.457 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.486 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.486 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.488 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.488 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.489 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.490 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.491 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.491 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.492 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.492 [main] INFO ninja.Bootstrap - Ninja injector started in 35 ms.
+16:49:40.493 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.493 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.493 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.493 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:40.493 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.493 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.493 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+16:49:40.494 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.494 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.494 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.494 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.494 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.496 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:40.496 [main] INFO ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+16:49:40.496 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.496 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.496 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.496 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.496 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.497 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:40.497 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.544 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.544 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.544 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.545 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.546 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.546 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.547 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.547 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.547 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.547 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.547 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.547 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.548 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.548 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.548 [main] INFO ninja.Bootstrap - Ninja injector started in 43 ms.
+16:49:40.548 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.548 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.548 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.548 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:40.549 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.549 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.549 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+16:49:40.550 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.550 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.550 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.550 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.550 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.551 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:40.551 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:40.551 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.593 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.594 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.595 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.595 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.595 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.595 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.595 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.596 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.598 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.598 [main] INFO ninja.Bootstrap - Ninja injector started in 46 ms.
+16:49:40.603 [main] INFO ninja.RouterImpl - ----------------------------------------------------
+16:49:40.603 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.603 [main] INFO ninja.RouterImpl - ----------------------------------------------------
+16:49:40.603 [main] INFO ninja.RouterImpl - GET /  =>  ninja.RouteBuilderImpl$$Lambda$58/253708502::apply
+16:49:40.603 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.604 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.604 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+16:49:40.605 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:40.605 [main] INFO ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+16:49:40.605 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.605 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.605 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.605 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.605 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.606 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:40.606 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+Oct 17, 2021 4:49:40 PM com.google.inject.servlet.GuiceFilter setPipeline
+WARNING: Multiple Servlet injectors detected. This is a warning indicating that you have more than one GuiceFilter running in your web application. If this is deliberate, you may safely ignore this message. If this is NOT deliberate however, your application may not work as expected.
+16:49:40.627 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:40.627 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:40.627 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:40.628 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:40.629 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:40.629 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:40.630 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:40.630 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:40.630 [main] INFO ninja.Bootstrap - Ninja injector started in 24 ms.
+16:49:40.631 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.631 [main] INFO ninja.RouterImpl - Registered routes
+16:49:40.631 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:40.631 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:40.631 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:40.631 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:40.632 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
+16:49:40.634 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+16:49:40.635 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+16:49:40.756 [main] DEBUG ninja.utils.AbstractContext - Not able to parse body because request did not send content type header at: /
+16:49:40.824 [main] DEBUG ninja.utils.AbstractContext - No BodyParserEngine found for Content-Type application/UNKNOWN at route /
+16:49:40.839 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.839 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.839 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.839 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.839 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.844 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.844 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.844 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.844 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.844 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.850 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.850 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.850 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.850 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.850 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.853 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.854 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.854 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.854 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.854 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.856 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.858 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.858 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.858 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.858 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.864 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.865 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.865 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.865 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.865 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.867 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.870 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.870 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.870 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.870 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.877 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.877 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.877 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.877 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.877 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:40.879 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:40.879 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:40.880 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:40.880 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:40.880 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:42.004 [main] INFO ninja.servlet.NinjaServletListener - Using JSR-356 websocket container null
+16:49:42.012 [main] INFO ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+16:49:42.033 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/application.conf
+16:49:42.035 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/application.conf
+16:49:42.035 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/application.conf at null: no protocol: conf/application.conf
+16:49:42.038 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/application.conf)
+16:49:42.038 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/application.conf
+16:49:42.073 [main] INFO ninja.Bootstrap - Successfully configured Logback.
+16:49:42.076 [main] INFO ninja.Bootstrap - Enabling Ninja classic configuration
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages.properties
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages.properties
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages.properties at null: no protocol: conf/messages.properties
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages.properties)
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages.properties
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_en.properties
+16:49:42.846 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_en.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_en.properties at null: no protocol: conf/messages_en.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_en.properties)
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_en.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_de.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_de.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_de.properties at null: no protocol: conf/messages_de.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_de.properties)
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_de.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr-FR.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr-FR.properties
+16:49:42.847 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr-FR.properties at null: no protocol: conf/messages_fr-FR.properties
+16:49:42.848 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - Loading configuration from the context classpath (conf/messages_fr-FR.properties)
+16:49:42.848 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - Base path set to file:///home/ch61/ninja/ninja-servlet/target/test-classes/conf/messages_fr-FR.properties
+16:49:42.848 [main] DEBUG org.apache.commons.configuration.PropertiesConfiguration - FileName set to conf/messages_fr.properties
+16:49:42.848 [main] DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.locate(): base is null, name is conf/messages_fr.properties
+16:49:42.848 [main] DEBUG org.apache.commons.configuration.DefaultFileSystem - Could not locate file conf/messages_fr.properties at null: no protocol: conf/messages_fr.properties
+16:49:42.849 [main] INFO ninja.utils.SwissKnife - Could not load file conf/messages_fr.properties (not a bad thing necessarily, but I am returing null)
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - Registered response template engines
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:49:42.907 [main] INFO ninja.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:49:42.908 [main] INFO ninja.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:49:42.914 [main] INFO ninja.bodyparser.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:49:42.916 [main] INFO ninja.Bootstrap - Ninja injector started in 835 ms.
+16:49:42.921 [main] WARN ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+16:49:42.922 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:42.922 [main] INFO ninja.RouterImpl - Registered routes
+16:49:42.922 [main] INFO ninja.RouterImpl - ---------------------------------------
+16:49:42.922 [main] INFO ninja.RouterImpl - GET /  =>  controller.DummyControllerForTesting::dummyMethod
+16:49:42.922 [main] INFO ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+16:49:42.922 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:49:42.924 [main] INFO ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 2ms

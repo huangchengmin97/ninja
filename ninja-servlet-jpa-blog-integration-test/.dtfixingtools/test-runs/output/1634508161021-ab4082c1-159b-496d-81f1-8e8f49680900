@@ -1,0 +1,1074 @@
+17:02:42.243 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:42.298 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1272ms to org.eclipse.jetty.util.log.Slf4jLog
+17:02:42.361 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:42.483 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:42.484 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:42.517 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@79c5636f{STARTED}
+17:02:42.520 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:42.521 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:42.954 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:42.954 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:42.958 [main] WARN  freemarker.logger - Logger library was already set earlier to "auto"; change to "SLF4J" won't effect loggers created earlier.
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:42.961 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:42.968 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:42.981 [main] INFO  ninja.Bootstrap - Ninja injector started in 459 ms.
+17:02:43.024 [main] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+17:02:43.068 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:43.068 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:43.068 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:43.068 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:43.068 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:43.068 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:43.068 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:43.069 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:43.069 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:43.069 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:43.069 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:43.069 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:43.069 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:43.072 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:43.087 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:43.096 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 5.2.4 by Boxfuse
+17:02:43.268 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:43.295 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:43.358 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.015s)
+17:02:43.576 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:43.600 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.014s)
+17:02:43.609 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:43.623 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:43.624 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:43.648 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:43.656 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.050s)
+17:02:43.911 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:43.911 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:43.911 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:44.160 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:44.210 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+17:02:44.211 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+17:02:44.214 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17:02:44.330 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+17:02:44.350 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:44.358 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:44.358 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:44.358 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:44.366 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+17:02:44.461 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+17:02:44.525 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@d5565df3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ed734056 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|5eb9bf7d, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d6088193 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|34ea86ff, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|55d87b73, numHelperThreads -> 3 ]
+17:02:44.578 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:44.587 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:44.689 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:44.725 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final
+17:02:45.161 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 2092ms
+17:02:45.165 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e284d90{/,null,AVAILABLE}
+17:02:45.182 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3bd7f8dc{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:45.183 [main] INFO  org.eclipse.jetty.server.Server - Started @4158ms
+17:02:45.183 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:45.183 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:45.184 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:45.184 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:45.184 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:45.205 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:45.207 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 2ms
+17:02:45.208 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1e284d90{/,null,STOPPED}
+17:02:45.208 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:45.218 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3bd7f8dc{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:45.219 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:45.395 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:45.396 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:45.398 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:45.398 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:45.402 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@33ef393a{STARTED}
+17:02:45.402 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:45.403 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:45.461 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:45.461 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:45.462 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:45.463 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:45.463 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:45.464 [main] INFO  ninja.Bootstrap - Ninja injector started in 61 ms.
+17:02:45.473 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:45.473 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:45.473 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:45.473 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:45.474 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:45.474 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:45.474 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:45.474 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:45.474 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:45.474 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:45.474 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:45.475 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:45.476 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:45.483 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:45.484 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:45.501 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+17:02:45.729 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:45.746 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.007s)
+17:02:45.750 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:45.760 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:45.760 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:45.780 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:45.797 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.048s)
+17:02:46.011 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.013 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.014 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.030 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:46.039 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:46.039 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:46.039 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:46.039 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:46.109 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@32e5e8aa [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f3057021 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|7262f848, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3ffb6489 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|7a4729e6, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|340572ad, numHelperThreads -> 3 ]
+17:02:46.119 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:46.119 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:46.124 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:46.144 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 670ms
+17:02:46.145 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@562b4373{/,null,AVAILABLE}
+17:02:46.146 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@368e7d3a{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:46.146 [main] INFO  org.eclipse.jetty.server.Server - Started @5120ms
+17:02:46.146 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:46.146 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:46.146 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:46.146 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:46.146 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:46.486 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:46.490 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 4ms
+17:02:46.490 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@562b4373{/,null,STOPPED}
+17:02:46.490 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:46.492 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@368e7d3a{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:46.503 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:46.504 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:46.504 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:46.553 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:46.553 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:46.554 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:46.555 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:46.555 [main] INFO  ninja.Bootstrap - Ninja injector started in 50 ms.
+17:02:46.568 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:46.569 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:46.569 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:46.569 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:46.569 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:46.569 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:46.569 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:46.569 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:46.569 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:46.569 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:46.573 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:46.573 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:46.573 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:46.573 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:46.573 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:46.573 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:46.573 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:46.574 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:46.574 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:46.574 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:46.575 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:46.583 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database (H2 1.4)
+17:02:46.586 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:46.605 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.010s)
+17:02:46.615 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 2
+17:02:46.617 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+17:02:46.834 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.834 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.834 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:46.854 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2
+	...]
+17:02:46.859 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:46.860 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database
+17:02:46.860 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****, autocommit=false}
+17:02:46.860 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:46.893 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9c9ccaf2 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8f4bf5f2 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|1af29de, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ac30997b [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|43a77cd6, jdbcUrl -> jdbc:h2:./target/h2database, properties -> {user=******, password=******, autocommit=false} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|3205ea73, numHelperThreads -> 3 ]
+17:02:46.907 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:46.907 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:46.912 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:46.922 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 348ms
+17:02:46.922 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:46.922 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+17:02:46.923 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:46.923 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:46.986 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:46.986 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:46.987 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:46.988 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:46.988 [main] INFO  ninja.Bootstrap - Ninja injector started in 64 ms.
+17:02:46.999 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:47.000 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:47.002 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:47.002 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:47.002 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:47.002 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:47.002 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:47.002 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:47.002 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:47.002 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:47.003 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:47.003 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:47.159 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database (H2 1.4)
+17:02:47.160 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:47.177 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.011s)
+17:02:47.182 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 2
+17:02:47.182 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+17:02:47.391 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:47.391 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:47.391 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:47.406 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2
+	...]
+17:02:47.411 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:47.411 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database
+17:02:47.411 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****, autocommit=false}
+17:02:47.411 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:47.488 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f6f4b5c3 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@759854f8 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|2e353ae8, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@9c8a7260 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|7702e4a, jdbcUrl -> jdbc:h2:./target/h2database, properties -> {user=******, password=******, autocommit=false} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|2283bbd4, numHelperThreads -> 3 ]
+17:02:47.498 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:47.498 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:47.507 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:47.522 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 520ms
+17:02:47.523 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:47.523 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+17:02:47.524 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:47.526 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:47.527 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:47.527 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:47.538 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@2f43b557{STARTED}
+17:02:47.539 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:47.539 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:47.598 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:47.598 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:47.601 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:47.601 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:47.601 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:47.601 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:47.602 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:47.602 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:47.602 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:47.602 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:47.603 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:47.604 [main] INFO  ninja.Bootstrap - Ninja injector started in 64 ms.
+17:02:47.623 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:47.623 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:47.623 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:47.623 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:47.623 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:47.623 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:47.624 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:47.624 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:47.624 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:47.625 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:47.625 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:47.625 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:47.625 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:47.625 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:47.625 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:47.627 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:47.628 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:47.634 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:47.635 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:47.654 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+17:02:47.879 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:47.896 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.009s)
+17:02:47.899 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:47.905 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:47.910 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:47.921 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:47.933 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.034s)
+17:02:48.150 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:48.150 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:48.150 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:48.160 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:48.164 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:48.164 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:48.164 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:48.165 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:48.197 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@61fa0af1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@257f23d2 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|2eb38561, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@54cd3042 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|1fd81048, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|70332479, numHelperThreads -> 3 ]
+17:02:48.203 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:48.203 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:48.208 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:48.224 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 599ms
+17:02:48.224 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@152153aa{/,null,AVAILABLE}
+17:02:48.225 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5db504ce{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:48.225 [main] INFO  org.eclipse.jetty.server.Server - Started @7200ms
+17:02:48.225 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:48.225 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:48.225 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:48.225 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:48.225 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+response xml: <ArticlesDto><articles><id>1</id><title>My third post</title><postedAt>1634508168221</postedAt><content>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed nisl sed lorem commodo elementum in a leo. Aliquam erat volutpat. Nulla libero odio, consectetur eget rutrum ac, varius vitae orci. Suspendisse facilisis tempus elit, facilisis ultricies massa condimentum in. Aenean id felis libero. Quisque nisl eros, accumsan eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula.</content><authorIds>1</authorIds></articles><articles><id>2</id><title>My second post</title><postedAt>1634508168222</postedAt><content>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed nisl sed lorem commodo elementum in a leo. Aliquam erat volutpat. Nulla libero odio, consectetur eget rutrum ac, varius vitae orci. Suspendisse facilisis tempus elit, facilisis ultricies massa condimentum in. Aenean id felis libero. Quisque nisl eros, accumsan eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula.</content><authorIds>1</authorIds></articles><articles><id>3</id><title>Hello to the blog example!</title><postedAt>1634508168222</postedAt><content>&lt;p>Hi and welcome to the demo of Ninja!&lt;/p> &lt;p>This example shows how you can use Ninja in the wild. Some things you can learn:&lt;/p>&lt;ul>&lt;li>How to use the templating system (header, footer)&lt;/li>&lt;li>How to test your application with ease.&lt;/li>&lt;li>Setting up authentication (login / logout)&lt;/li>&lt;li>Internationalization (i18n)&lt;/li>&lt;li>Static assets / using webjars&lt;/li>&lt;li>Persisting data&lt;/li>&lt;li>Beautiful &lt;a href="/article/3">html routes&lt;/a> for your application&lt;/li>&lt;li>How to design your restful Api (&lt;a href="/api/bob@gmail.com/articles.json">Json&lt;/a> and &lt;a href="/api/bob@gmail.com/articles.xml">Xml&lt;/a>)&lt;/li>&lt;li>... and much much more.&lt;/li>&lt;/ul>&lt;p>We are always happy to see you on our mailing list! Check out &lt;a href="https://www.ninjaframework.org">our website for more&lt;/a>.&lt;/p></content><authorIds>1</authorIds></articles></ArticlesDto>
+17:02:48.626 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:48.628 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 2ms
+17:02:48.628 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@152153aa{/,null,STOPPED}
+17:02:48.628 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:48.629 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5db504ce{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:48.630 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:48.632 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:48.634 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:48.637 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:48.639 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:48.641 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@71c7b390{STARTED}
+17:02:48.641 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:48.641 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:48.679 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:48.679 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:48.680 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:48.680 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:48.680 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:48.680 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:48.680 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:48.681 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:48.681 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:48.681 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:48.681 [main] INFO  ninja.Bootstrap - Ninja injector started in 39 ms.
+17:02:48.690 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:48.690 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:48.690 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:48.690 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:48.690 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:48.690 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:48.690 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:48.690 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:48.690 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:48.690 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:48.691 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:48.692 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:48.874 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:48.876 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:48.883 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:49.114 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:49.122 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.002s)
+17:02:49.124 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:49.128 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:49.128 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:49.133 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:49.136 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.012s)
+17:02:49.351 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:49.351 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:49.351 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:49.360 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:49.369 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:49.369 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:49.369 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:49.369 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:49.401 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@fd581f50 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b866fa31 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|49632250, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@968c1487 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|61254a73, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|1437f717, numHelperThreads -> 3 ]
+17:02:49.413 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:49.413 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:49.418 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:49.434 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 744ms
+17:02:49.434 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@29f1856c{/,null,AVAILABLE}
+17:02:49.440 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3f3245{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:49.440 [main] INFO  org.eclipse.jetty.server.Server - Started @8415ms
+17:02:49.440 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:49.440 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:49.440 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:49.440 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:49.440 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+response: {"articles":[{"id":1,"title":"My third post","postedAt":1634508169431,"content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed nisl sed lorem commodo elementum in a leo. Aliquam erat volutpat. Nulla libero odio, consectetur eget rutrum ac, varius vitae orci. Suspendisse facilisis tempus elit, facilisis ultricies massa condimentum in. Aenean id felis libero. Quisque nisl eros, accumsan eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula.","authorIds":[1]},{"id":2,"title":"My second post","postedAt":1634508169431,"content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed nisl sed lorem commodo elementum in a leo. Aliquam erat volutpat. Nulla libero odio, consectetur eget rutrum ac, varius vitae orci. Suspendisse facilisis tempus elit, facilisis ultricies massa condimentum in. Aenean id felis libero. Quisque nisl eros, accumsan eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula. eget ornare id, pharetra eget felis. Aenean purus erat, egestas nec scelerisque non, eleifend id ligula.","authorIds":[1]},{"id":3,"title":"Hello to the blog example!","postedAt":1634508169432,"content":"<p>Hi and welcome to the demo of Ninja!</p> <p>This example shows how you can use Ninja in the wild. Some things you can learn:</p><ul><li>How to use the templating system (header, footer)</li><li>How to test your application with ease.</li><li>Setting up authentication (login / logout)</li><li>Internationalization (i18n)</li><li>Static assets / using webjars</li><li>Persisting data</li><li>Beautiful <a href=\"/article/3\">html routes</a> for your application</li><li>How to design your restful Api (<a href=\"/api/bob@gmail.com/articles.json\">Json</a> and <a href=\"/api/bob@gmail.com/articles.xml\">Xml</a>)</li><li>... and much much more.</li></ul><p>We are always happy to see you on our mailing list! Check out <a href=\"https://www.ninjaframework.org\">our website for more</a>.</p>","authorIds":[1]}]}
+17:02:49.641 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:49.642 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+17:02:49.642 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@29f1856c{/,null,STOPPED}
+17:02:49.642 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:49.647 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3f3245{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:49.648 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:50.033 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:50.035 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:50.036 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:50.036 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:50.042 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@61246366{STARTED}
+17:02:50.042 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:50.042 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:50.082 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:50.082 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:50.083 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:50.083 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:50.084 [main] INFO  ninja.Bootstrap - Ninja injector started in 42 ms.
+17:02:50.090 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:50.090 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:50.090 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:50.091 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:50.091 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:50.091 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:50.091 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:50.091 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:50.091 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:50.091 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:50.091 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:50.092 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:50.096 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:50.097 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:50.106 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.005s)
+17:02:50.318 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:50.324 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.002s)
+17:02:50.334 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:50.338 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:50.338 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:50.342 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:50.344 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.011s)
+17:02:50.562 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:50.562 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:50.562 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:50.570 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:50.583 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:50.583 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:50.583 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:50.583 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:50.616 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8f89bc5e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7525b48e [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|3422eca, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@707409d [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|3e71aa38, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|5353c403, numHelperThreads -> 3 ]
+17:02:50.623 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:50.624 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:50.628 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:50.660 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 569ms
+17:02:50.661 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1c72ae33{/,null,AVAILABLE}
+17:02:50.662 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@221488b3{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:50.662 [main] INFO  org.eclipse.jetty.server.Server - Started @9636ms
+17:02:50.662 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:50.662 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:50.662 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:50.662 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:50.662 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:50.723 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:50.726 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 3ms
+17:02:50.726 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1c72ae33{/,null,STOPPED}
+17:02:50.726 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:50.727 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@221488b3{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:50.728 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:50.730 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:50.737 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:50.743 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:50.743 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:50.749 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@69217d3f{STARTED}
+17:02:50.749 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:50.749 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:50.791 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:50.791 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:50.792 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:50.792 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:50.793 [main] INFO  ninja.Bootstrap - Ninja injector started in 44 ms.
+17:02:50.807 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:50.807 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:50.807 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:50.807 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:50.807 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:50.807 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:50.807 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:50.807 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:50.807 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:50.807 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:50.808 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:50.808 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:50.957 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:50.958 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:50.964 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:51.173 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:51.196 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.006s)
+17:02:51.203 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:51.214 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:51.215 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:51.224 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:51.230 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.027s)
+17:02:51.444 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:51.444 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:51.444 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:51.464 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:51.468 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:51.469 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:51.469 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:51.469 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:51.513 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6c88648b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8e21bcaa [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|c0ad028, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@82a86e1b [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|6ed0a229, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|844833e, numHelperThreads -> 3 ]
+17:02:51.518 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:51.518 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:51.523 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:51.553 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 746ms
+17:02:51.554 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@357c6278{/,null,AVAILABLE}
+17:02:51.554 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4f3eac77{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:51.554 [main] INFO  org.eclipse.jetty.server.Server - Started @10529ms
+17:02:51.554 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:51.554 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:51.554 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:51.554 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:51.554 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:51.559 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:51.559 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+17:02:51.559 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@357c6278{/,null,STOPPED}
+17:02:51.559 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:51.560 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4f3eac77{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:51.561 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:51.562 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:51.563 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:51.564 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:51.564 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:51.581 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@7eee7a62{STARTED}
+17:02:51.582 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:51.582 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:51.610 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:51.610 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:51.611 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:51.611 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:51.611 [main] INFO  ninja.Bootstrap - Ninja injector started in 29 ms.
+17:02:51.618 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:51.619 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:51.619 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:51.619 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:51.619 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:51.619 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:51.619 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:51.619 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:51.619 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:51.619 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:51.619 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:51.620 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:51.797 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:51.798 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:51.807 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:52.019 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:52.024 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.001s)
+17:02:52.025 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:52.028 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:52.028 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:52.032 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:52.034 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.009s)
+17:02:52.252 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:52.252 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:52.252 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:52.261 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:52.265 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:52.265 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:52.265 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:52.265 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:52.297 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@8c7e51fc [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@11daf43a [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|12e84488, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@a2049366 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|7d2ff195, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|328ba6b6, numHelperThreads -> 3 ]
+17:02:52.308 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:52.308 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:52.314 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:52.340 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 721ms
+17:02:52.341 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@26b1a8e8{/,null,AVAILABLE}
+17:02:52.341 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@186ba71f{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:52.341 [main] INFO  org.eclipse.jetty.server.Server - Started @11316ms
+17:02:52.341 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:52.341 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:52.341 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:52.341 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:52.342 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+ <!DOCTYPE html><html lang="en">  <head>    <script src="/assets/webjars/jquery/1.11.1/jquery.js"></script>    <meta charset="utf-8">    <title>Error. Forbidden.</title>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="">    <meta name="author" content="">    <!-- Le styles -->    <link href="/assets/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">    <!-- Optional theme -->    <link rel="stylesheet" href="/assets/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css">        <!-- Latest compiled and minified JavaScript -->        <style type="text/css">      body {        padding-top: 60px;        padding-bottom: 40px;      }    </style>    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->    <!--[if lt IE 9]>      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>    <![endif]-->  </head>  <body>    <div class="container">        <div class="navbar navbar-inverse navbar-fixed-top">	<div class="container">		<div class="navbar-header">			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">				<span class="icon-bar"></span> 				<span class="icon-bar"></span> 				<span class="icon-bar"></span>			</button>			<a class="navbar-brand" href="/">Ninja ❤ JPA</a>		</div>		<div class="navbar-collapse collapse">			<ul class="nav navbar-nav">				<li class="active"><a href="/">Home</a></li>			</ul>			<ul class="navbar-right nav navbar-nav">                                <li><a href="/login" id="login">Login</a></li>							</ul>		</div>		<!--/.navbar-collapse -->	</div></div>                <h1>Oops. Forbidden.</h1><hr><footer>Built with <a href="https://www.ninjaframework.org">Ninja framework</a>.</footer>            </div> <!-- /container -->        <script type="text/javascript" src="/assets/webjars/tinymce-jquery/3.4.9/jscripts/tiny_mce/tiny_mce.js" ></script>    <script src="/assets/webjars/bootstrap/3.3.4/js/bootstrap.min.js"></script></body></html>
+ <!DOCTYPE html><html lang="en">  <head>    <script src="/assets/webjars/jquery/1.11.1/jquery.js"></script>    <meta charset="utf-8">    <title>Error. Forbidden.</title>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="description" content="">    <meta name="author" content="">    <!-- Le styles -->    <link href="/assets/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">    <!-- Optional theme -->    <link rel="stylesheet" href="/assets/webjars/bootstrap/3.3.4/css/bootstrap-theme.min.css">        <!-- Latest compiled and minified JavaScript -->        <style type="text/css">      body {        padding-top: 60px;        padding-bottom: 40px;      }    </style>    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->    <!--[if lt IE 9]>      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>    <![endif]-->  </head>  <body>    <div class="container">        <div class="navbar navbar-inverse navbar-fixed-top">	<div class="container">		<div class="navbar-header">			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">				<span class="icon-bar"></span> 				<span class="icon-bar"></span> 				<span class="icon-bar"></span>			</button>			<a class="navbar-brand" href="/">Ninja ❤ JPA</a>		</div>		<div class="navbar-collapse collapse">			<ul class="nav navbar-nav">				<li class="active"><a href="/">Home</a></li>			</ul>			<ul class="navbar-right nav navbar-nav">                                <li><a href="/login" id="login">Login</a></li>							</ul>		</div>		<!--/.navbar-collapse -->	</div></div>                <h1>Oops. Forbidden.</h1><hr><footer>Built with <a href="https://www.ninjaframework.org">Ninja framework</a>.</footer>            </div> <!-- /container -->        <script type="text/javascript" src="/assets/webjars/tinymce-jquery/3.4.9/jscripts/tiny_mce/tiny_mce.js" ></script>    <script src="/assets/webjars/bootstrap/3.3.4/js/bootstrap.min.js"></script></body></html>
+17:02:52.408 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:52.409 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+17:02:52.411 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@26b1a8e8{/,null,STOPPED}
+17:02:52.411 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:52.412 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@186ba71f{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:52.413 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:52.442 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:52.442 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:52.445 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:52.445 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:52.447 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@326a6d81{STARTED}
+17:02:52.448 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:52.448 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:52.472 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:52.472 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:52.473 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:52.473 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:52.473 [main] INFO  ninja.Bootstrap - Ninja injector started in 25 ms.
+17:02:52.480 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:52.480 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:52.480 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:52.480 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:52.480 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:52.480 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:52.480 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:52.480 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:52.480 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:52.480 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:52.480 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:52.481 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:52.640 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:52.640 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:52.645 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:52.856 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:52.861 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.001s)
+17:02:52.862 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:52.865 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:52.866 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:52.869 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:52.871 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.009s)
+17:02:53.088 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.088 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.088 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.101 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:53.104 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:53.104 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:53.105 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:53.105 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:53.142 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@72582c33 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@352fe42a [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|211d48f4, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dc1523b1 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|50e9302c, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|2e52689b, numHelperThreads -> 3 ]
+17:02:53.150 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:53.150 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:53.154 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:53.181 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 701ms
+17:02:53.182 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@67a39702{/,null,AVAILABLE}
+17:02:53.183 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5ffb4210{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:53.183 [main] INFO  org.eclipse.jetty.server.Server - Started @12157ms
+17:02:53.183 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:53.183 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:53.183 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:53.183 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:53.183 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:53.265 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:53.266 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+17:02:53.266 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@67a39702{/,null,STOPPED}
+17:02:53.266 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:53.271 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5ffb4210{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:53.271 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:53.335 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:53.336 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:53.337 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:53.337 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:53.341 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@11788149{STARTED}
+17:02:53.341 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:53.341 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:53.367 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:53.367 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:53.369 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:53.369 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:53.369 [main] INFO  ninja.Bootstrap - Ninja injector started in 27 ms.
+17:02:53.375 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:53.375 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:53.375 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:53.375 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:53.375 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:53.375 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:53.375 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:53.375 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:53.376 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:53.376 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:53.376 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:53.377 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:53.510 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:53.511 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:53.515 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:53.738 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:53.746 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.005s)
+17:02:53.748 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:53.751 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:53.751 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:53.754 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:53.759 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.011s)
+17:02:53.974 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.974 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.974 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:53.990 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:53.995 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:53.995 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:53.995 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:53.995 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:54.029 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4175fc0f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@32387da4 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|7f78e609, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b8a64e86 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|658697e2, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|6c279ddf, numHelperThreads -> 3 ]
+17:02:54.041 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:54.041 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:54.045 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:54.058 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 682ms
+17:02:54.058 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4d9d3294{/,null,AVAILABLE}
+17:02:54.058 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@621e342d{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:54.058 [main] INFO  org.eclipse.jetty.server.Server - Started @13033ms
+17:02:54.058 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:54.058 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:54.058 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:54.059 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:54.059 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:54.150 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:54.151 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+17:02:54.155 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4d9d3294{/,null,STOPPED}
+17:02:54.155 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:54.156 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@621e342d{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:54.156 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024
+17:02:54.167 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
+17:02:54.170 [main] INFO  o.d.rendermachine.RenderMachineImpl - Did not find resource org/doctester/custom_doctester_stylesheet.css.
+17:02:55.088 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+17:02:55.089 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+17:02:55.091 [main] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.38.v20210224 on <all>:1024
+17:02:55.091 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.38.v20210224; built: 2021-02-24T20:25:07.675Z; git: 288f3cc74549e8a913bf363250b0744f2695b8e6; jvm 1.8.0_292-8u292-b10-0ubuntu1~18.04-b10
+17:02:55.098 [main] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@5f8c87d1{STARTED}
+17:02:55.098 [main] INFO  ninja.Bootstrap - Successfully configured Logback.
+17:02:55.098 [main] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+17:02:55.128 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+17:02:55.129 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+17:02:55.130 [main] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+17:02:55.131 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:55.131 [main] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+17:02:55.135 [main] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+17:02:55.135 [main] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+17:02:55.135 [main] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+17:02:55.135 [main] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+17:02:55.135 [main] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+17:02:55.135 [main] INFO  ninja.Bootstrap - Ninja injector started in 37 ms.
+17:02:55.143 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:55.143 [main] INFO  ninja.RouterImpl - Registered routes
+17:02:55.143 [main] INFO  ninja.RouterImpl - ---------------------------------------------------------------------------
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /setup                             =>  controllers.ApplicationController::setup
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /login                             =>  controllers.LoginLogoutController::login
+17:02:55.143 [main] INFO  ninja.RouterImpl - POST /login                             =>  controllers.LoginLogoutController::loginPost
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /logout                            =>  controllers.LoginLogoutController::logout
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /article/new                       =>  controllers.ArticleController::articleNew
+17:02:55.143 [main] INFO  ninja.RouterImpl - POST /article/new                       =>  controllers.ArticleController::articleNewPost
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /article/{id}                      =>  controllers.ArticleController::articleShow
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.json      =>  controllers.ApiController::getArticlesJson
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /api/{username}/article/{id}.json  =>  controllers.ApiController::getArticleJson
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /api/{username}/articles.xml       =>  controllers.ApiController::getArticlesXml
+17:02:55.143 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.json       =>  controllers.ApiController::postArticleJson
+17:02:55.143 [main] INFO  ninja.RouterImpl - POST /api/{username}/article.xml        =>  controllers.ApiController::postArticleXml
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}     =>  ninja.AssetsController::serveWebJars
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}             =>  ninja.AssetsController::serveStatic
+17:02:55.143 [main] INFO  ninja.RouterImpl - GET  /.*                                =>  controllers.ApplicationController::index
+17:02:55.143 [main] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.2-SNAPSHOT
+
+17:02:55.143 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+17:02:55.144 [main] INFO  n.migrations.MigrationEngineProvider - Using ninja.migrations.flyway.MigrationEngineFlyway as default implementation for ninja.migrations.MigrationEngine
+17:02:55.145 [main] WARN  org.flywaydb.core.Flyway - Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+17:02:55.151 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:./target/h2database_test (H2 1.4)
+17:02:55.151 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:55.159 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+17:02:55.381 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+17:02:55.386 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.001s)
+17:02:55.389 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+17:02:55.396 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+17:02:55.403 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - 
+17:02:55.408 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 2 - 
+17:02:55.410 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.021s)
+17:02:55.633 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:55.633 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:55.633 [main] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+17:02:55.639 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: h2_test
+	...]
+17:02:55.643 [main] INFO  o.h.e.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+17:02:55.643 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./target/h2database_test
+17:02:55.643 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=ra, password=****}
+17:02:55.643 [main] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+17:02:55.673 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6ad3b5da [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9eced2c5 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsxak1415oo0tj1hgd|29c9080, idleConnectionTestPeriod -> 300, initialPoolSize -> 0, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 100, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 0, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@bf0d66ce [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|2be2d43f, jdbcUrl -> jdbc:h2:./target/h2database_test, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsxak1415oo0tj1hgd|2026d6cc, numHelperThreads -> 3 ]
+17:02:55.677 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:02:55.677 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+17:02:55.681 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+17:02:55.693 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 550ms
+17:02:55.694 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@58654b7e{/,null,AVAILABLE}
+17:02:55.694 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@ca58ef5{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:55.694 [main] INFO  org.eclipse.jetty.server.Server - Started @14669ms
+17:02:55.694 [main] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.38.v20210224 on <all>:1024
+17:02:55.694 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+17:02:55.694 [main] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+17:02:55.694 [main] INFO  ninja.standalone.NinjaJetty -  => http://localhost:1024
+17:02:55.694 [main] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+title: Home page
+17:02:57.463 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+17:02:57.465 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 2ms
+17:02:57.465 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@58654b7e{/,null,STOPPED}
+17:02:57.465 [main] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:1024
+17:02:57.469 [main] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@ca58ef5{HTTP/1.1, (http/1.1)}{0.0.0.0:1024}
+17:02:57.470 [main] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:1024

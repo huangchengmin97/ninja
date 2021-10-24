@@ -1,0 +1,2 @@
+16:48:47.222 [main] DEBUG ninja.websockets.jsr356.Jsr356WebSockets - Adding websocket to /test with endpoint class java.lang.Object in server container org.mockito.codegen.ServerContainer$MockitoMock$367752614
+16:48:47.231 [main] DEBUG ninja.websockets.jsr356.Jsr356WebSockets - Adding websocket to /test with endpoint class javax.websocket.Endpoint in server container org.mockito.codegen.ServerContainer$MockitoMock$367752614
